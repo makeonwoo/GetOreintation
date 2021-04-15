@@ -6,41 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="48dp"
-        android:text="Orientation from magnetic field sensor and accelerometer"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<com.example.getoreintation.AzimuthView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/txtAzimuth"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="Azimuth"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/txtPitch"
-        android:layout_width="58dp"
-        android:layout_height="18dp"
-        android:layout_marginTop="52dp"
-        android:text="Pitch"
-        app:layout_constraintStart_toStartOf="@+id/txtAzimuth"
-        app:layout_constraintTop_toBottomOf="@+id/txtAzimuth" />
-
-    <TextView
-        android:id="@+id/txtRoll"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="Roll"
-        app:layout_constraintStart_toStartOf="@+id/txtPitch"
-        app:layout_constraintTop_toBottomOf="@+id/txtPitch" />
-
+</com.example.getoreintation.AzimuthView>
 </androidx.constraintlayout.widget.ConstraintLayout>
