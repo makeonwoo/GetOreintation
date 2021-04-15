@@ -6,9 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<com.example.getoreintation.AzimuthView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    <com.example.getoreintation.AzimuthView
+        android:id="@+id/azimuthView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</com.example.getoreintation.AzimuthView>
+    </com.example.getoreintation.AzimuthView>
 </androidx.constraintlayout.widget.ConstraintLayout>
