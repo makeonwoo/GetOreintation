@@ -77,4 +77,18 @@ public class MainActivity extends AppCompatActivity {
     private float radian2Degree(float radian) {
         return radian * 180 / (float) Math.PI;
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        sensorManager.unregisterListener(listener);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        sensorManager.registerListener(listener, magSensor,SensorManager.SENSOR_DELAY_UI);
+        sensorManager.registerListener(listener, accSensor,SensorManager.SENSOR_DELAY_UI);
+
+    }
 }
